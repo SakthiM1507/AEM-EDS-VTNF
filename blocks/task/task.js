@@ -20,14 +20,14 @@ export default function decorate(block) {
       const taskserviceCont = service.querySelector('tr');
       taskserviceCont?.classList.add('custom-task_service-content');
 
-       const taskserviceimage = service.querySelector('td:has(img)');
+      const taskserviceimage = service.querySelector('td:has(img)');
       taskserviceimage?.classList.add('custom-task_service-image');
 
-    const taskserviceicon = service.querySelector('img');
-    taskserviceicon?.classList.add('custom-task_service_icon');
+      const taskserviceicon = service.querySelector('img');
+      taskserviceicon?.classList.add('custom-task_service_icon');
 
-    const taskservicedescription = service.querySelector('td:not(:has(img))');
-    taskservicedescription?.classList.add('custom-task_service_description');
+      const taskservicedescription = service.querySelector('td:not(:has(img))');
+      taskservicedescription?.classList.add('custom-task_service_description');
     });
     const button = task.querySelector('p:has(a)');
     button?.classList.add('custom-task-button');
@@ -35,9 +35,7 @@ export default function decorate(block) {
     const learnMore = block.querySelector('a[title="Learn more"]');
     learnMore?.classList.add('custom-button__link--secondary');
 
-  const getStarted = block.querySelector('a[title="Get start today"]');
-  getStarted?.classList.add('custom-button__link--primary');
-
-});
-  
+    const getStarted = block.querySelector('a[title="Get start today"]');
+    getStarted?.classList.add('custom-button__link--primary');
+  });
 }
