@@ -1,4 +1,4 @@
-// export default function decorate(block) 
+// export default function decorate(block)
 // {
 //     const teaser = block.children[0];
 //     console.log(teaser);
@@ -24,7 +24,7 @@
 //     const link = secondChild.querySelector('a');
 //     console.log(link);
 //     link.classList.add('custom-teaser--content--link');
-    
+
 // }
 
 export default function decorate(block) {
