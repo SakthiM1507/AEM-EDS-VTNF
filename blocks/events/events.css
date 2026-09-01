@@ -1,15 +1,15 @@
 .events {
   width: 100%;
 }
+
 .events .custom-event {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  -moz-column-gap: 0px;
-       column-gap: 0px;
-  row-gap: 11px;
+  gap: 11px 0;
 }
+
 .events .custom-event-title {
   width: 100%;
   margin: 0 0 62px;
@@ -18,17 +18,24 @@
   text-align: center;
   letter-spacing: 2px;
 }
+
 .events .custom-event-item {
   width: 586px;
   border-radius: 6px;
   background: #f8f8f8;
   margin-bottom: 20px;
 }
+
 .events .custom-event-content {
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 0 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 11px 0;
 }
+
 .events .custom-event-content p:first-child {
   width: 100%;
   color: #9290a8;
@@ -39,31 +46,27 @@
   text-align: center;
   text-transform: uppercase;
 }
+
 .events .custom-event-content hr {
   display: none;
 }
-.events .custom-event-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  -moz-column-gap: 0px;
-       column-gap: 0px;
-  row-gap: 11px;
-}
+
 .events .custom-event-content .custom-event-details {
   box-sizing: border-box;
   width: 70%;
   padding: 35px 20px 35px 40px;
 }
+
 .events .custom-event-content .custom-event-details p {
   text-align: left;
-  color: rgba(142, 142, 142, 0.7607843137);
+  color: rgb(142 142 142 / 76.1%);
   font-size: 14px;
   font-weight: 500;
   line-height: 23px;
   text-transform: capitalize;
   letter-spacing: 1px;
 }
+
 .events .custom-event-content .custom-event-details h2 {
   margin: 0;
   color: #292929;
@@ -72,12 +75,14 @@
   line-height: 35px;
   letter-spacing: 1px;
 }
+
 .events .custom-event-content .custom-event-date {
   box-sizing: border-box;
   width: 30%;
   padding: 30px 35px 30px 10px;
   text-align: center;
 }
+
 .events .custom-event-content .custom-event-date h3 {
   margin: 0;
   color: #20ad9c;
@@ -85,6 +90,7 @@
   line-height: 47px;
   letter-spacing: 1px;
 }
+
 .events .custom-event-content .custom-event-date h2 {
   margin: 1px 0 9px;
   color: #292929;
@@ -94,6 +100,7 @@
   text-transform: uppercase;
   letter-spacing: 2px;
 }
+
 .events .custom-event-content .custom-event-date a {
   display: inline-block;
   min-width: 108px;
@@ -109,7 +116,8 @@
   text-decoration: none;
   transition: background 0.2s ease, transform 0.2s ease;
 }
+
 .events .custom-event-content .custom-event-date a:hover {
   background: #168f81;
   transform: translateY(-1px);
-}/*# sourceMappingURL=events.css.map */
+}
