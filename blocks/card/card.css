@@ -3,17 +3,15 @@
   width: 1300px;
   gap: 30px;
 }
-
 .card .custom-card {
   position: relative;
   min-height: 100px;
   padding: 19px 15px;
   border: 1px solid #ddd;
   border-radius: 6px;
-  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   text-align: center;
 }
-
 .card .custom-card::after {
   content: "";
   position: absolute;
@@ -24,11 +22,9 @@
   background: red;
   transition: width 0.4s ease;
 }
-
 .card .custom-card:hover::after {
   width: 100%;
 }
-
 .card .custom-card_number {
   position: absolute;
   top: 15px;
@@ -37,16 +33,14 @@
   font-size: 48px;
   color: #eee;
 }
-
 .card .custom-card_heading {
-  margin: 0 0 15px 20px;
+  margin: 0px 0 15px 20px;
   font-size: 24px;
   color: #222;
 }
-
 .card .custom-card_description {
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
   color: #777;
-}
+}/*# sourceMappingURL=card.css.map */
