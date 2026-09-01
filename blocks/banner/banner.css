@@ -6,41 +6,48 @@
   margin: 60px auto;
   padding: 0;
 }
+
 .banner .custom-banner {
   display: flex;
   align-items: end;
   min-height: 762px;
 }
+
 .banner .custom-banner_content {
   align-self: center;
   padding-left: 110px;
   padding-bottom: 16px;
 }
+
 .banner .custom-banner_content p:first-child {
-  margin: 0px 0 20px;
+  margin: 0 0 20px;
   color: #20ad9d;
   font-size: 23px;
   font-weight: 500;
   line-height: 17px;
 }
-.banner .custom-banner_content p:not(:first-child):not(.custom-banner__action-container) {
-  padding: 0px 7px 0px 0px;
+
+.banner .custom-banner_content p:not(:first-child, .custom-banner__action-container) {
+  padding: 0 7px 0 0;
   margin: 12px 0 37px;
-  color: rgba(123, 132, 155, 0.7490196078);
+  color: rgb(123 132 155 / 74.9%);
   font-size: 19px;
   font-weight: 500;
   line-height: 30px;
 }
+
 .banner .custom-banner_pre-title {
   font-size: 47px;
   color: #3f3a64;
   text-transform: uppercase;
-  margin: 17px 0px 0px 0px;
-  padding: 0px 25px 0px 0px;
+  margin: 17px 0 0;
+  padding: 0 25px 0 0;
 }
+
 .banner .custom-banner_pre-title strong {
   font-weight: 900;
 }
+
 .banner .custom-banner_action-link {
   display: inline-flex;
   align-items: center;
@@ -56,10 +63,12 @@
   text-decoration: none;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
+
 .banner .custom-banner_action-link:hover {
   background-color: #18998b;
   transform: translateY(-2px);
 }
+
 .banner .custom-banner_image {
   display: flex;
   align-items: flex-end;
@@ -67,93 +76,108 @@
   height: 100%;
   min-width: 701px;
 }
+
 .banner .custom-banner_image picture {
   width: 100%;
   height: 100%;
 }
+
 .banner .custom-banner_image-element {
   display: block;
   width: 100%;
   max-width: 784px;
   height: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: bottom right;
-     object-position: bottom right;
+  object-fit: contain;
+  object-position: bottom right;
   align-self: flex-end;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .banner .custom-banner {
     grid-template-columns: 50% 50%;
     min-height: 700px;
   }
+
   .banner .custom-banner_content {
     padding-left: 3rem;
     padding-right: 1rem;
   }
+
   .banner .custom-banner_content > p:first-child {
     margin-bottom: 1.5rem;
     font-size: 1.4rem;
   }
+
   .banner .custom-banner_pre-title {
     font-size: clamp(2.5rem, 5vw, 3.8rem);
     line-height: 1.12;
   }
-  .banner .custom-banner_content > p:not(:first-child):not(.custom-banner__action-container) {
+
+  .banner .custom-banner_content > p:not(:first-child, .custom-banner__action-container) {
     font-size: 1.2rem;
     margin-bottom: 2rem;
   }
+
   .banner .custom-banner_image-element {
     max-width: 600px;
   }
+
   .banner .custom-banner_action-link {
     width: 220px;
     height: 60px;
   }
 }
-@media (max-width: 767px) {
+
+@media (width <= 767px) {
   .banner .custom-banner {
     display: flex;
     flex-direction: column;
     min-height: auto;
   }
+
   .banner .custom-banner_content {
     padding: 4rem 1.5rem 2rem;
   }
+
   .banner .custom-banner_content > p:first-child {
     margin-bottom: 1rem;
     font-size: 1.25rem;
   }
+
   .banner .custom-banner_pre-title {
     max-width: 100%;
     margin-bottom: 1.25rem;
     font-size: clamp(2.3rem, 10vw, 3.2rem);
     line-height: 1.1;
   }
-  .banner .custom-banner_content > p:not(:first-child):not(.custom-banner__action-container) {
+
+  .banner .custom-banner_content > p:not(:first-child, .custom-banner__action-container) {
     max-width: 100%;
     margin-bottom: 2rem;
     font-size: 1.1rem;
     line-height: 1.5;
   }
+
   .banner .custom-banner_action-link {
     width: 220px;
     height: 58px;
     font-size: 1rem;
   }
+
   .banner .custom-banner_image {
     width: 100%;
     height: auto;
   }
+
   .banner .custom-banner_image picture {
     width: 100%;
     height: auto;
   }
+
   .banner .custom-banner_image-element {
     width: 100%;
     max-width: 500px;
     height: auto;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=banner.css.map */
+}

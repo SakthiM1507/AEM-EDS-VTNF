@@ -2,40 +2,48 @@
   background: #303044;
   padding: 101px 7%;
 }
+
 .video-container .custom-video {
   display: flex;
   align-items: center;
   gap: 32px;
 }
+
 .video-container .custom-video_image {
   width: 100%;
 }
+
 .video-container .custom-video_image .custom-video__image-wrapper {
   margin: 0;
   line-height: 0;
   margin-top: 30px;
 }
+
 .video-container .custom-video_content {
   color: #fff;
 }
+
 .video-container .custom-video_content .custom-video_title {
   margin: 0 0 45px;
   color: #fff;
   font-size: 47px;
+
   /* font-weight: 700; */
   line-height: 55px;
-  padding: 13px 74px 0px 0px;
+  padding: 13px 74px 0 0;
 }
+
 .video-container .custom-video_content p {
   position: relative;
   margin: 0;
   padding: 25px 28px 25px 68px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 2px solid rgb(255 255 255 / 10%);
   color: #fff;
   font-size: 24px;
   font-weight: 600;
   line-height: 1.4;
 }
+
 .video-container .custom-video_content p::before {
   content: "";
   position: absolute;
@@ -45,49 +53,58 @@
   height: 12px;
   border: 2px solid #fff;
   transform: translateY(-50%);
-  margin: 0px 23px;
+  margin: 0 23px;
 }
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .video-container {
     padding: 60px 5%;
   }
+
   .video-container .custom-video {
     grid-template-columns: 1fr;
     gap: 45px;
   }
+
   .video-container .custom-video_content .custom-video_title {
     margin-bottom: 30px;
     font-size: clamp(34px, 6vw, 50px);
   }
+
   .video-container .custom-video_content > p {
     font-size: 20px;
   }
 }
-@media (max-width: 600px) {
+
+@media (width <= 600px) {
   .video-container {
     padding: 40px 20px;
   }
+
   .video-container .custom-video {
     gap: 30px;
   }
+
   .video-container .custom-video_image .custom-video__image-wrapper::after {
     width: 80px;
     height: 56px;
     border-radius: 10px;
   }
+
   .video-container .custom-video_image .custom-video__image-wrapper::before {
     border-top-width: 11px;
     border-bottom-width: 11px;
     border-left-width: 18px;
   }
+
   .video-container .custom-video_content .custom-video_title {
     margin-bottom: 20px;
     font-size: 32px;
     line-height: 1.2;
   }
+
   .video-container .custom-video_content > p {
     padding: 20px 15px 20px 40px;
     font-size: 17px;
   }
-}/*# sourceMappingURL=video.css.map */
+}
