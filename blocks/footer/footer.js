@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 import { getMetadata } from '../../scripts/aem.js';
 import { loadFragment } from '../fragment/fragment.js';
 
@@ -17,4 +18,37 @@ export default async function decorate(block) {
   while (fragment.firstElementChild) footer.append(fragment.firstElementChild);
 
   block.append(footer);
+  // decorate social icons
+  const icons = block.querySelectorAll('.icon-facebook, .icon-twitter, .icon-instagram, .icon-linkedin');
+
+  const socialIconsContainer = document.createElement('div');
+  socialIconsContainer.className = 'social-icons';
+
+  icons.forEach((icon) => {
+    socialIconsContainer.appendChild(icon);
+  });
+
+  block.appendChild(socialIconsContainer);
+
+  const customFooter = block.querySelector('.custom-footer');
+  const socialIcons = block.querySelector('.social-icons');
+
+  if (customFooter && socialIcons) {
+    customFooter.parentElement.appendChild(socialIcons);
+  }
+
+  const footerItems = [...block.children];
+
+footerItems.forEach((item) => {
+  item.classList.add('customized-footer');
+
+  const footerContent = item.querySelector('div');
+  footerContent?.classList.add('custom-footer-content');
+
+  const footerGridExplore = footerContent?.querySelector('div:nth-child(2)');
+  footerGridExplore?.classList.add('custom-footer-explore');
+
+  const footerGridInformation = footerContent?.querySelector('div:nth-child(3)');
+  footerGridInformation?.classList.add('custom-footer-information');
+});
 }

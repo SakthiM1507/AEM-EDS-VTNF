@@ -1,0 +1,169 @@
+.custom-form-container 
+{
+  .default-content-wrapper 
+  {
+    text-align: center;
+    h5 
+    {
+      font-size: 32px;
+      color: #3f3a64;
+      strong 
+      {
+        color: #20ad96;
+      }
+    }
+  }
+  p 
+  {
+    color: #757577;
+    font-size: 16px;
+    margin: 25px 25% 45px;
+  }
+}
+
+.custom-form 
+{
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  div:first-child 
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    div:first-child 
+    {
+      width: 292px;
+      picture 
+      {
+        position: absolute;
+        top: 13%;
+      }
+    }
+    div:last-child 
+    {
+      width: 409px;
+      picture 
+      {
+        position: absolute;
+        top: 34%;
+      }
+    }
+    img 
+    {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .newsletter-form 
+  {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    z-index: 2;
+    display: flex;
+    width: 537px;
+    max-width: calc(100% - 40px);
+    height: 69px;
+    transform: translate(-50%, -50%);
+    input 
+    {
+      width: 333px;
+      height: 54px;
+      padding: 0 25px;
+      border: 0;
+      border-radius: 8px 0 0 8px;
+      background: #f7f7f7;
+      color: #555555;
+      font-size: 14px;
+      &::placeholder 
+      {
+        color: #c6c3c3;
+        opacity: 1;
+      }
+      &:focus 
+      {
+        outline: none;
+      }
+    }
+    button 
+    {
+      width: 150px;
+      height: 53px;
+      border: 0;
+      border-radius: 0 8px 8px 0;
+      background: #19b39f;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      &:hover 
+      {
+        background: #159f8e;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+
+  .custom-form-container {
+
+    .default-content-wrapper {
+      padding: 0 20px;
+
+      h5 {
+        font-size: 26px;
+        line-height: 34px;
+      }
+
+      p {
+        margin: 15px 0 30px;
+        font-size: 14px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  .custom-form {
+    min-height: 220px;
+
+    div:first-child {
+      justify-content: center;
+
+      div:first-child {
+        display: none;
+      }
+
+      div:last-child {
+        width: 100%;
+
+        picture {
+          top: 25%;
+          right: 0;
+        }
+      }
+    }
+
+    .newsletter-form {
+      top: 20%;
+      width: calc(100% - 40px);
+      height: auto;
+
+      input {
+        width: 65%;
+        height: 50px;
+        padding: 0 15px;
+        font-size: 13px;
+      }
+
+      button {
+        width: 35%;
+        height: 50px;
+        font-size: 12px;
+      }
+    }
+  }
+}

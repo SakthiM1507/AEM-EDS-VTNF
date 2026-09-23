@@ -30,6 +30,11 @@
       max-width: 1440px;
       margin: 0 auto;
       padding: 0 0 40px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      column-gap: 0px;
+      row-gap: 11px;
       p:first-child
       {
         width: 100%;
@@ -45,11 +50,6 @@
       {
         display: none;
       }
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      column-gap: 0px;
-      row-gap: 11px;
 
       .custom-event-details
       {
@@ -128,7 +128,49 @@
     }
   }
 }
-  
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .events .custom-event {
+    &-title {
+      margin-bottom: 30px;
+      font-size: 32px;
+    }
+
+    // event items are tables, which treat their 586px width as a minimum
+    &-item {
+      width: 100%;
+    }
+
+    &-content {
+      width: 100%;
+      min-width: 0;
+
+      p:first-child {
+        padding-left: 0;
+      }
+
+      .custom-event-details {
+        padding: 25px 10px 25px 20px;
+
+        h2 {
+          padding-right: 0;
+          font-size: 18px;
+          line-height: 26px;
+        }
+      }
+
+      .custom-event-date {
+        padding: 20px 10px;
+
+        a {
+          min-width: 0;
+          padding: 6px 12px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
 
   // =========================
   // TABLET
@@ -300,4 +342,4 @@
 //       }
 //     }
 //   }
-// }
+// }

@@ -123,7 +123,7 @@
     .custom-button__link--secondary 
     {
       color: #20ae9f;
-      background: #fff;bv
+      background: #fff;
       border: 2px solid #e8e8e8;
       padding: 15px 34px;
       &:hover 
@@ -144,6 +144,46 @@
         color: #20ae9f;
         background: #fff;
       }
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .task-container .custom-task {
+    &_pre-title {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    // one service per row, without the desktop nudge that pushed it off screen
+    &_service {
+      width: 100%;
+      margin-top: 30px;
+
+      &-content {
+        transform: none;
+      }
+
+      &-image {
+        width: 60px;
+      }
+
+      &_icon {
+        width: 56px;
+        height: 58px;
+        bottom: 0;
+      }
+
+      &_description p:first-child {
+        margin-bottom: 6px;
+        font-size: 20px;
+        line-height: 28px;
+      }
+    }
+
+    // stack the two buttons when there isn't room for both side by side
+    &-button {
+      flex-wrap: wrap;
+      gap: 15px;
     }
   }
 }

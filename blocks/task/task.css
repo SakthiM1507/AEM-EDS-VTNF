@@ -136,3 +136,40 @@
   color: #20ae9f;
   background: #fff;
 }
+
+@media (width >= 320px) and (width <= 767px) {
+  .task-container .custom-task_pre-title {
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .task-container .custom-task_service {
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .task-container .custom-task_service-content {
+    transform: none;
+  }
+
+  .task-container .custom-task_service-image {
+    width: 60px;
+  }
+
+  .task-container .custom-task_service_icon {
+    width: 56px;
+    height: 58px;
+    bottom: 0;
+  }
+
+  .task-container .custom-task_service_description p:first-child {
+    margin-bottom: 6px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .task-container .custom-task-button {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}

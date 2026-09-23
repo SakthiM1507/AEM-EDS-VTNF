@@ -1,0 +1,353 @@
+.carousel-container
+{
+  .default-content-wrapper
+  {
+    h2
+    {
+      font-size: 22px;
+      color: #20ad96;
+      letter-spacing: 1px;
+      font-weight: 600;
+      text-align: center;
+    }
+    h5
+    {
+      font-size: 47px;
+      margin-top: 30px;
+      color: #3f3a64;
+      line-height: 48px;
+      text-align: center;
+      letter-spacing: 1px;
+      margin-top: 40px;
+    }
+  }
+}
+.carousel 
+{
+  position: relative;
+  width: 100%;
+  padding: 40px 0 60px;
+  box-sizing: border-box;
+  &-viewport 
+  {  
+    max-width: 1380px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  &-track
+  {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  &-page 
+  {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+  }
+  &-slide 
+  {
+    flex: 0 0 33.3333%;
+    width: 33.3333%;
+    padding: 0 18px;
+    box-sizing: border-box;
+  }
+  &-image
+  {
+    width: 100%;
+    height: 245px;
+    overflow: hidden;
+    border-radius: 6px;
+    picture
+    {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+     img 
+    {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &-content
+  {
+    background: #fff;
+    padding: 35px 30px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+
+    border-radius: 0 0 9px 9px;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+      h4 
+      {
+        margin: 0 0 11px;
+        color: #282828;
+        font-size: 22px;
+        font-weight: 900;
+        line-height: 33px;
+        letter-spacing: 1px;
+        padding-right: 11px;
+      }
+      p:first-of-type
+      {
+        margin: 0;
+        color: #777;
+        font-size: 15px;
+        line-height: 27px;
+        padding: 0px 5px;
+      }
+      p:last-child 
+      {
+        margin: 27px -30px 0;
+        padding: 10px;
+        border-top: 1px solid #eee;
+      }
+      a 
+      {
+        color: #20ad9b;
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+      &:hover
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+  &-indicators 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  &-indicator 
+  {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #85858563;
+    cursor: pointer;
+    &.active 
+    {
+      background: #333;
+    }
+    &:hover 
+    {
+      background: #555;
+    }
+  }
+}
+//feedback carousel
+.testimonials-carousel 
+{
+  .carousel-slide 
+  {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    margin: 0 10px;
+    flex: 1 1 0;
+    width: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .carousel-image 
+  {
+    height: auto;
+    padding: 55px 8px 2px 38px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+    h4 
+    {
+      line-height: 32px;
+      letter-spacing: 1px;
+      font-size: 19px;
+      margin-bottom: 21px;
+      color: #000000ba;
+    }
+    p 
+    {
+      margin: 0;
+      color: #777;
+      font-size: 17px;
+      line-height: 31px;
+      font-weight: 600;
+      padding-right: 27px;
+    }
+  }
+  .carousel-page 
+  {
+    flex: 0 0 100%;
+    width: 100%;
+    display: flex;
+    gap: 4px;
+    box-sizing: border-box;
+    align-items: flex-start;
+  }
+  .carousel-content
+  {
+    min-height: 115px;
+    padding: 15px 30px 25px;
+    background: #fff;
+    box-sizing: border-box;
+    border-radius: 0 0 8px 8px;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    p:first-child 
+    {
+      flex: 0 0 70px;
+      margin: 0;
+      font-size: 0;
+      picture 
+      {
+        display: block;
+        width: 70px;
+        height: 70px;
+        margin: 0;
+      }
+      img 
+      {
+        display: block;
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    p:last-child 
+    {
+      flex: 1;
+      margin: 0;
+      color: #888;
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    .profile-text 
+    {
+      width: 77%;
+      p 
+      {
+        margin: 0 -30px 0;
+        padding: 10px;
+        border-top: none;
+        font-size: 14px;
+      }
+      span 
+      {
+        font-size: 15px;
+      }
+    }
+  }
+  .carousel-indicators 
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+  }
+  .carousel-indicator 
+  {
+    width: 10px;
+    height: 10px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background: #85858563;
+    cursor: pointer;
+    &.active 
+    {
+      background: #333;
+    }
+    &:hover 
+    {
+      background: #555;
+    }
+  }
+}
+
+ //mobile view-carousel
+ @media (min-width: 320px) and (max-width: 767px) {
+
+  .carousel-container {
+    .default-content-wrapper {
+      h2 {
+        font-size: 18px;
+      }
+
+      h5 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 20px;
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .carousel {
+    padding: 25px 0 40px;
+
+    &-viewport {
+      width: 100%;
+    }
+
+    &-page {
+      flex-wrap: wrap;
+    }
+
+    &-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    &-image {
+      height: 220px;
+    }
+
+    &-content {
+      padding: 25px 20px 0;
+
+      h4 {
+        font-size: 19px;
+        line-height: 28px;
+        padding: 0;
+      }
+
+      p:first-of-type {
+        font-size: 14px;
+        line-height: 24px;
+        padding: 0;
+      }
+
+      p:last-child {
+        margin: 20px -20px 0;
+      }
+    }
+
+    &-indicators {
+      margin-top: 20px;
+      gap: 10px;
+    }
+
+    &-indicator {
+      width: 8px;
+      height: 8px;
+    }
+  }
+}

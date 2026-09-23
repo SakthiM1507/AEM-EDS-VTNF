@@ -121,3 +121,43 @@
   background: #168f81;
   transform: translateY(-1px);
 }
+
+@media (width >= 320px) and (width <= 767px) {
+  .events .custom-event-title {
+    margin-bottom: 30px;
+    font-size: 32px;
+  }
+
+  .events .custom-event-item {
+    width: 100%;
+  }
+
+  .events .custom-event-content {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .events .custom-event-content p:first-child {
+    padding-left: 0;
+  }
+
+  .events .custom-event-content .custom-event-details {
+    padding: 25px 10px 25px 20px;
+  }
+
+  .events .custom-event-content .custom-event-details h2 {
+    padding-right: 0;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .events .custom-event-content .custom-event-date {
+    padding: 20px 10px;
+  }
+
+  .events .custom-event-content .custom-event-date a {
+    min-width: 0;
+    padding: 6px 12px;
+    white-space: nowrap;
+  }
+}
