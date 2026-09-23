@@ -5,9 +5,9 @@
   font-weight: 600;
   text-align: center;
 }
+
 .carousel-container .default-content-wrapper h5 {
   font-size: 47px;
-  margin-top: 30px;
   color: #3f3a64;
   line-height: 48px;
   text-align: center;
@@ -21,46 +21,53 @@
   padding: 40px 0 60px;
   box-sizing: border-box;
 }
+
 .carousel-viewport {
   max-width: 1380px;
   margin: 0 auto;
   overflow: hidden;
 }
+
 .carousel-track {
   display: flex;
   width: 100%;
   transition: transform 0.5s ease-in-out;
 }
+
 .carousel-page {
   flex: 0 0 100%;
   width: 100%;
   display: flex;
   box-sizing: border-box;
 }
+
 .carousel-slide {
   flex: 0 0 33.3333%;
   width: 33.3333%;
   padding: 0 18px;
   box-sizing: border-box;
 }
+
 .carousel-image {
   width: 100%;
   height: 245px;
   overflow: hidden;
   border-radius: 6px;
 }
+
 .carousel-image picture {
   display: block;
   width: 100%;
   height: 100%;
 }
+
 .carousel-image img {
   display: block;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .carousel-content {
   background: #fff;
   padding: 35px 30px 0;
@@ -69,8 +76,9 @@
   text-align: center;
   box-sizing: border-box;
   border-radius: 0 0 9px 9px;
-  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 24px rgb(0 0 0 / 8%);
 }
+
 .carousel-content h4 {
   margin: 0 0 11px;
   color: #282828;
@@ -80,27 +88,32 @@
   letter-spacing: 1px;
   padding-right: 11px;
 }
+
 .carousel-content p:first-of-type {
   margin: 0;
   color: #777;
   font-size: 15px;
   line-height: 27px;
-  padding: 0px 5px;
+  padding: 0 5px;
 }
+
 .carousel-content p:last-child {
   margin: 27px -30px 0;
   padding: 10px;
   border-top: 1px solid #eee;
 }
+
 .carousel-content a {
   color: #20ad9b;
   font-size: 14px;
   font-weight: 700;
   text-decoration: none;
 }
+
 .carousel-content a:hover {
   text-decoration: underline;
 }
+
 .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -108,6 +121,7 @@
   gap: 14px;
   margin-top: 28px;
 }
+
 .carousel-indicator {
   width: 10px;
   height: 10px;
@@ -115,12 +129,14 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: rgba(133, 133, 133, 0.3882352941);
+  background: rgb(133 133 133 / 38.8%);
   cursor: pointer;
 }
+
 .carousel-indicator.active {
   background: #333;
 }
+
 .carousel-indicator:hover {
   background: #555;
 }
@@ -128,9 +144,14 @@
 .testimonials-carousel .carousel-slide {
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 5%);
   margin: 0 10px;
+  flex: 1 1 0;
+  width: auto;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 .testimonials-carousel .carousel-image {
   height: auto;
   padding: 55px 8px 2px 38px;
@@ -138,13 +159,15 @@
   box-sizing: border-box;
   border-radius: 8px 8px 0 0;
 }
+
 .testimonials-carousel .carousel-image h4 {
   line-height: 32px;
   letter-spacing: 1px;
   font-size: 19px;
   margin-bottom: 21px;
-  color: rgba(0, 0, 0, 0.7294117647);
+  color: rgb(0 0 0 / 72.9%);
 }
+
 .testimonials-carousel .carousel-image p {
   margin: 0;
   color: #777;
@@ -153,6 +176,7 @@
   font-weight: 600;
   padding-right: 27px;
 }
+
 .testimonials-carousel .carousel-page {
   flex: 0 0 100%;
   width: 100%;
@@ -161,12 +185,7 @@
   box-sizing: border-box;
   align-items: flex-start;
 }
-.testimonials-carousel .carousel-slide {
-  flex: 1 1 0;
-  width: auto;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .testimonials-carousel .carousel-content {
   min-height: 115px;
   padding: 15px 30px 25px;
@@ -177,25 +196,28 @@
   display: flex;
   align-items: center;
 }
+
 .testimonials-carousel .carousel-content p:first-child {
   flex: 0 0 70px;
   margin: 0;
   font-size: 0;
 }
+
 .testimonials-carousel .carousel-content p:first-child picture {
   display: block;
   width: 70px;
   height: 70px;
   margin: 0;
 }
+
 .testimonials-carousel .carousel-content p:first-child img {
   display: block;
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
+
 .testimonials-carousel .carousel-content p:last-child {
   flex: 1;
   margin: 0;
@@ -203,18 +225,22 @@
   font-size: 16px;
   line-height: 1.4;
 }
+
 .testimonials-carousel .carousel-content .profile-text {
   width: 77%;
 }
+
 .testimonials-carousel .carousel-content .profile-text p {
-  margin: 0 -30px 0;
+  margin: 0 -30px;
   padding: 10px;
   border-top: none;
   font-size: 14px;
 }
+
 .testimonials-carousel .carousel-content .profile-text span {
   font-size: 15px;
 }
+
 .testimonials-carousel .carousel-indicators {
   display: flex;
   justify-content: center;
@@ -222,6 +248,7 @@
   gap: 14px;
   margin-top: 28px;
 }
+
 .testimonials-carousel .carousel-indicator {
   width: 10px;
   height: 10px;
@@ -229,65 +256,79 @@
   padding: 0;
   border: 0;
   border-radius: 50%;
-  background: rgba(133, 133, 133, 0.3882352941);
+  background: rgb(133 133 133 / 38.8%);
   cursor: pointer;
 }
+
 .testimonials-carousel .carousel-indicator.active {
   background: #333;
 }
+
 .testimonials-carousel .carousel-indicator:hover {
   background: #555;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (width >= 320px) and (width <= 767px) {
   .carousel-container .default-content-wrapper h2 {
     font-size: 18px;
   }
+
   .carousel-container .default-content-wrapper h5 {
     font-size: 28px;
     line-height: 36px;
     margin-top: 20px;
     padding: 0 20px;
   }
+
   .carousel {
     padding: 25px 0 40px;
   }
+
   .carousel-viewport {
     width: 100%;
   }
+
   .carousel-page {
     flex-wrap: wrap;
   }
+
   .carousel-slide {
     flex: 0 0 100%;
     width: 100%;
     padding: 0 20px;
   }
+
   .carousel-image {
     height: 220px;
   }
+
   .carousel-content {
     padding: 25px 20px 0;
   }
+
   .carousel-content h4 {
     font-size: 19px;
     line-height: 28px;
     padding: 0;
   }
+
   .carousel-content p:first-of-type {
     font-size: 14px;
     line-height: 24px;
     padding: 0;
   }
+
   .carousel-content p:last-child {
     margin: 20px -20px 0;
   }
+
   .carousel-indicators {
     margin-top: 20px;
     gap: 10px;
   }
+
   .carousel-indicator {
     width: 8px;
     height: 8px;
   }
-}/*# sourceMappingURL=Carousel.css.map */
+}

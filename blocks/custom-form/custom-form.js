@@ -1,16 +1,12 @@
 /* eslint-disable linebreak-style */
 export default async function decorate(block) {
   const link = block.querySelector('a');
-  console.log('link',link);
   if (!link) return;
 
   const response = await fetch(link.href);
-  console.log(response,'response');
   const data = await response.json();
-  console.log(data,'data');
 
   const emailField = data.data.find((item) => item.field === 'Email');
-  console.log(emailField,'emailField');
   if (!emailField) return;
 
   const form = document.createElement('form');

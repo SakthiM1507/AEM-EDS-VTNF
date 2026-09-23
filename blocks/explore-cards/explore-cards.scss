@@ -219,7 +219,7 @@
 // wrapped overlay text is pulled off screen by its negative margin; size the gaps to fit
 @media (min-width: 768px) and (max-width: 1365px) {
   .custom-courses_card {
-    column-gap: calc(8% / 7);
+    column-gap: 1.1429%; // (100% - 4 x 23%) / 7 gaps
   }
 
   .custom-courses-content {
