@@ -1,173 +1,153 @@
-.video-container {
+.video-wrapper
+{
+  margin: 0px !important;
+  max-width: 1600px !important;
+}
+.video.has-content 
+{
+  max-width: none;
+  margin: 0;
+  padding: 60px 7%;
+  text-align: left; 
   background: #303044;
-  padding: 101px 7%;
-
-  .custom-video {
+  background-image: radial-gradient(
+    rgb(255 255 255 / 7%) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 22px 22px;
+  .custom-video 
+  {
     display: flex;
-  align-items: center;
-  gap: 32px;
-//   max-width: 1440px;
-//   margin: 0 auto;
-
-//  &__image,
-//   &__content {
-//     flex: 1 1 50%;
-//     min-width: 0;
-//   }
-    // Image
-    &_image {
-    //   position: relative;
-      width: 100%;
-
-      .custom-video__image-wrapper {
-        margin: 0;
-        // position: relative;
-        // width: 100%;
-        line-height: 0;
-        margin-top: 30px;
-
-        // picture,
-        // img {
-        //   display: block;
-        //   width: 100%;
-        // }
-
-        // img {
-        //   height: auto;
-        //   object-fit: cover;
-        // }
-
-        // Play button
-        // &::after {
-        //   content: '';
-        //   position: absolute;
-        //   top: 50%;
-        //   left: 50%;
-        //   width: 120px;
-        //   height: 85px;
-        //   transform: translate(-50%, -50%);
-        //   background: #f00;
-        //   border-radius: 16px;
-        // }
-
-        // &::before {
-        //   content: '';
-        //   position: absolute;
-        //   z-index: 1;
-        //   top: 50%;
-        //   left: 50%;
-        //   transform: translate(-35%, -50%);
-        //   width: 0;
-        //   height: 0;
-        //   border-top: 17px solid transparent;
-        //   border-bottom: 17px solid transparent;
-        //   border-left: 28px solid #fff;
-        // }
+    align-items: center;
+    gap: 50px;
+    max-width: 1440px;
+    margin: auto;
+    &_media 
+    {
+    flex: 0 0 55%;
+      .video-placeholder
+      {
+        margin-top: 75px;
       }
     }
-
-    // Content
-    &_content {
+    &_content 
+    {
+    flex: 1;
+    color: #fff;
+    }
+    &_title 
+    {
+      margin: 0 0px 30px -30px;
+      font-size: 47px;
+      line-height: 1.2;
       color: #fff;
+    }
+    &_item 
+    {
+      position: relative;
+      margin: 0;
+      padding: 25px 0 25px 48px;
+      border-bottom: 2px solid rgb(255 255 255 / 10%);
+      color: #fff;
+      font-size: 22px;
+      line-height: 1.4;
+      &::before 
+      {
+        content: '';
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        width: 10px;
+        height: 12px;
+        border: 2px solid #fff;
+        transform: translateY(-50%);
+      }
+    }
+  }  
+  .video-placeholder-play button 
+  {
+    width: 80px;
+    height: 56px;
+    border: 0;
+    border-radius: 10px;
+    background: #f00;
+    position: relative;
+    bottom: 240px;
+    left: 320px;
+    &::before 
+    {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-top: 11px solid transparent;
+      border-bottom: 11px solid transparent;
+      border-left: 18px solid #fff;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
 
-      .custom-video_title {
-        margin: 0 0 45px;
-    color: #fff;
-    font-size: 47px;
-    /* font-weight: 700; */
-    line-height: 55px;
-    padding: 13px 74px 0px 0px;
+  // no width: 100% here, the section's 24px side padding would add on top of it
+  .video-wrapper {
+    max-width: 100% !important;
+  }
 
-       
+  .video.has-content {
+    padding: 30px 20px;
+
+    .custom-video {
+      flex-direction: column;
+      gap: 25px;
+
+      &_media {
+        width: 100%;
+        flex: none;
+
+        .video-placeholder {
+          position: relative;
+          margin-top: 0;
+        }
+
+        // overlay the play button on the poster so it stays centred at any width
+        .video-placeholder-play {
+          position: absolute;
+          inset: 0;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
       }
 
-      p {
-           position: relative;
-    margin: 0;
-    padding: 25px 28px 25px 68px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 1.4;
-        // Checkbox icon
+      &_content {
+        width: 100%;
+      }
+
+      &_title {
+        margin: 0 0 20px;
+        font-size: 28px;
+        line-height: 36px;
+      }
+
+      &_item {
+        padding: 18px 0 18px 35px;
+        font-size: 17px;
+        line-height: 25px;
+
         &::before {
-              content: "";
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    width: 9px;
-    height: 12px;
-    border: 2px solid #fff;
-    transform: translateY(-50%);
-    margin: 0px 23px;
-        }
-
-       
-      }
-    }
-  }
-}
-
-// Tablet
-@media (max-width: 900px) {
-  .video-container {
-    padding: 60px 5%;
-
-    .custom-video {
-      grid-template-columns: 1fr;
-      gap: 45px;
-
-      &_content {
-        .custom-video_title {
-          margin-bottom: 30px;
-          font-size: clamp(34px, 6vw, 50px);
-        }
-
-        > p {
-          font-size: 20px;
+          left: 5px;
+          width: 8px;
+          height: 10px;
         }
       }
     }
-  }
-}
 
-// Mobile
-@media (max-width: 600px) {
-  .video-container {
-    padding: 40px 20px;
-
-    .custom-video {
-      gap: 30px;
-
-      &_image {
-        .custom-video__image-wrapper {
-          &::after {
-            width: 80px;
-            height: 56px;
-            border-radius: 10px;
-          }
-
-          &::before {
-            border-top-width: 11px;
-            border-bottom-width: 11px;
-            border-left-width: 18px;
-          }
-        }
-      }
-
-      &_content {
-        .custom-video_title {
-          margin-bottom: 20px;
-          font-size: 32px;
-          line-height: 1.2;
-        }
-
-        > p {
-          padding: 20px 15px 20px 40px;
-          font-size: 17px;
-        }
-      }
+    .video-placeholder-play button {
+      width: 65px;
+      height: 46px;
+      bottom: auto;
+      left: auto;
     }
   }
 }
