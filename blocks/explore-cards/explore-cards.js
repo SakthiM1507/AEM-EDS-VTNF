@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable no-undef */
 /* eslint-disable indent */
 
@@ -85,6 +86,15 @@ function decorateEvents(block) {
 
     eventContent?.forEach((content) => {
       content.classList.add('custom-events-content');
+    });
+  });
+
+   const ticketLinks = block.querySelectorAll('.custom-events_action-link');
+
+  ticketLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      alert('Thank you for your interest! Your ticket request has been received.');
     });
   });
 }
