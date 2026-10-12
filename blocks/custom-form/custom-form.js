@@ -26,6 +26,12 @@ export default async function decorate(block) {
 
   form.append(input, button);
 
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    alert('Thank you for subscribing to our newsletter!');
+    form.reset();
+  });
+
   // Remove only the authored form data/table rows
   block.querySelectorAll(':scope > div').forEach((row) => {
     if (!row.querySelector('img')) {

@@ -64,7 +64,7 @@
   display: block;
   width: 79px;
   height: 81px;
-  object-fit: contain;
+     object-fit: contain;
   position: relative;
   bottom: 15px;
 }

@@ -25,6 +25,15 @@
 }
 
 @font-face {
+    font-family: 'Bodoni Moda 9pt';
+    src: url('BodoniModa9pt-Regular.woff2') format('woff2'),
+        url('BodoniModa9pt-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
   font-family: roboto-condensed;
   font-style: normal;
   font-weight: 700;

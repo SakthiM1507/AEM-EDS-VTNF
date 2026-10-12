@@ -51,17 +51,6 @@
       color: #fff;
       font-size: 22px;
       line-height: 1.4;
-      &::before 
-      {
-        content: '';
-        position: absolute;
-        left: 10px;
-        top: 50%;
-        width: 10px;
-        height: 12px;
-        border: 2px solid #fff;
-        transform: translateY(-50%);
-      }
     }
   }  
   .video-placeholder-play button 

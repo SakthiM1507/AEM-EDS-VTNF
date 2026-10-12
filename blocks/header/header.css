@@ -65,15 +65,6 @@
   font-weight: 600;
 }
 
-.header .nav-sections .default-content-wrapper li p::after {
-  content: "";
-  display: inline-block;
-  width: 5px;
-  height: 5px;
-  border: 1px solid #999;
-  box-sizing: border-box;
-}
-
 .header .nav-sections .default-content-wrapper li:hover {
   color: #7772b5;
 }

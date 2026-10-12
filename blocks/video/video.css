@@ -51,17 +51,6 @@
   line-height: 1.4;
 }
 
-.video.has-content .custom-video_item::before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  width: 10px;
-  height: 12px;
-  border: 2px solid #fff;
-  transform: translateY(-50%);
-}
-
 .video.has-content .video-placeholder-play button {
   width: 80px;
   height: 56px;
