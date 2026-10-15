@@ -83,4 +83,9 @@ profiles.forEach((profile) => {
 
   profile.appendChild(text);
 });
+const section = document.querySelector('.section.carousel-container');
+
+if (section) {
+  section.id = 'services';
+}
 }

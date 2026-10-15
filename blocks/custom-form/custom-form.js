@@ -40,4 +40,9 @@ export default async function decorate(block) {
   });
 
   block.append(form);
+  const productSection = block.closest('.section.custom-form-container');
+
+  if (productSection) {
+    productSection.id = 'product';
+  }
 }

@@ -218,10 +218,15 @@ export default async function decorate(block) {
     layout.append(mediaCell, contentCell);
     block.textContent = '';
     block.append(layout);
+    const videoSection = document.querySelector('.section.video-container');
+
+    if (videoSection) {
+      videoSection.id = 'video';
+    }
 
     setupVideo(block, mediaCell);
     return;
   }
-
+  
   setupVideo(block, block);
 }

@@ -4,7 +4,8 @@ $max-color:#33315e;
 $nav-link:#6e6d7b;
 $hover:#7772b5;
 
-.header {
+.header 
+{
   width: 100%;
   background:$white;
   .nav-wrapper 
@@ -57,24 +58,25 @@ $hover:#7772b5;
       {
         margin: 0;
         padding: 30px 0;
-        color:$nav-link;
         font-size: 21px;
         font-weight: 500;
         line-height: 32px;
         cursor: pointer;
         p 
-      {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        margin: 0;
-        padding: 0;
-        font-size: 16px;
-        font-weight: 600;
-      }
-      &:hover {
-        color: $hover;
-      }
+        {
+          margin: 0;
+          padding: 0;
+          font-size: 16px;
+          font-weight: 600;
+          a
+          {
+            color:$nav-link;
+            &:hover 
+            {
+              color: $hover;
+            }
+          }
+        }
       }  
     }
   }
@@ -85,8 +87,8 @@ $hover:#7772b5;
 }
 
 
-// header.js switches to the desktop menu at 900px, so the hamburger layout must cover everything below
-  @media (min-width: 320px) and (max-width: 899px) {
+//mobile view
+  @media (min-width: 320px) and (max-width: 767px) {
   .header {
     #nav 
     {

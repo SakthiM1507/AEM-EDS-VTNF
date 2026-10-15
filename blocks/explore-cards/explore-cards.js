@@ -43,6 +43,11 @@ function decorateExploreCards(block) {
     courseContent?.forEach((content) => {
       content.classList.add('custom-courses-content');
     });
+     const coursesSection = document.querySelector('.section.explore-cards-container');
+
+  if (coursesSection) {
+    coursesSection.id = 'courses';
+  }
   });
 }
 
@@ -97,6 +102,11 @@ function decorateEvents(block) {
       alert('Thank you for your interest! Your ticket request has been received.');
     });
   });
+   const eventsSection = document.querySelector('.section.explore-cards-container:has(.custom-events)');
+
+  if (eventsSection) {
+    eventsSection.id = 'events';
+  }
 }
 
 /**

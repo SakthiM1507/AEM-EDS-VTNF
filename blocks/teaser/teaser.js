@@ -27,6 +27,11 @@ function decorateBanner(block) {
     const imageElement = item.querySelector('img');
     imageElement?.classList.add('custom-banner_image-element');
   });
+  const homeSection = document.querySelector('.section.teaser-container');
+
+  if (homeSection) {
+   homeSection.id = 'home';
+  }
 }
 
 /**
@@ -47,13 +52,18 @@ function decorateFeatures(block) {
     if (!description) return;
     description.classList.add('custom-feature_description');
 
-    [...description.querySelectorAll(':scope > p')].forEach((paragraph, i) => {
-      paragraph.classList.add(i === 0 ? 'custom-feature_name' : 'custom-feature_text');
+    [...description.querySelectorAll(':scope > p')].forEach((paragraph) => {
+      paragraph.classList.add('custom-feature_name');
       if (paragraph.querySelector('a')) {
       paragraph.classList.remove('custom-feature_name');
       paragraph.classList.add('custom-feature_buttons');
     }
     });
+   const featuresSection = document.querySelector('.section.teaser-container:has(.custom-feature)');
+
+  if (featuresSection) {
+    featuresSection.id = 'features';
+  }
   });
 }
 
